@@ -1,6 +1,3 @@
-import React from 'react'; import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; import Login from './pages/Login'; import Profile from './pages/Profile'; import Match from './pages/Match'; import Suggest from './pages/Suggest';
+import React from "react"; import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; import Login from "./pages/Login"; import Profile from "./pages/Profile"; import Match from "./pages/Match"; import Suggest from "./pages/Suggest"; import TravelLog from "./pages/TravelLog"; import Leaderboard from "./pages/Leaderboard";
 
-function App() { return ( <Router> <Routes> <Route path="/" element={<Login />} /> <Route path="/profile" element={<Profile />} /> <Route path="/match" element={<Match />} /> <Route path="/suggest" element={<Suggest />} /> </Routes> </Router> ); }
-
-export default App;
-
+function App() { return ( <Router> <Routes> <Route path="/" element={<Login />} /> <Route path="/profile" element={<Profile />} /> <Route path="/match" element={<Match />} /> <Route path="/suggest" element={<Suggest />} /> <Route path="/log" element={<TravelLog />} /> <Route path="/leaderboard" element={<Leaderboard />} /> </Routes> </Router> ); }
